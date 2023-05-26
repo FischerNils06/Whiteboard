@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Whiteboard</title>
+</head>
+<body>
+    <div id="header">
+        <table>
+            <tr>
+                <td><button id="save-btn" class="menu-btn">💾</button></td>
+                <td><button id="form-btn" class="menu-btn">Formen</button></td>
+                <td><button id="color-btn" class="menu-btn">Farben</button></td>
+                <td><button id="darkmode-btn" class="menu-btn">☾</button></td>
+                <td><button id="menue-btn" class="menu-btn">⁝</button></td>
+            </tr>
+            
+        </table>
+    </div>
+
+
+    <div id="main">
+        <div id="table">
+            <table>
+                <tr id="menue-form" class="menue men" >
+                    <td>Formen</td>
+                    <td><button id="einfuegen-btn" class="btn">Einfügen</button></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="menue-color" class="menue men">
+                    <td>Farben</td>
+                    <td id="ff0feld"><button id="fuellfarbe-btn" class="btn">Füllfarbe</button></td>
+                    <td id="fffeld">
+                        <div id="feld" class="invisible">
+                            <table id="fftable">
+                                <tr>
+                                    <td><button id="BLUE" class="btn-c">BLUE</button></td>
+                                    <td><button id="PURPLE" class="btn-c">PURPLE</button></td>
+                                    <td><button id="RED" class="btn-c">RED</button></td>
+                                    <td><button id="ORANGE" class="btn-c">ORANGE</button></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td><button id="YELLOW" class="btn-c">YELLOW</button></td>
+                                    <td><button id="GREEN" class="btn-c">GREEN</button></td>
+                                    <td><button id="BLACK" class="btn-c">BLACK</button></td>
+                                    <td><button id="WHITE" class="btn-c">WHITE</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="menue" class="menue men">
+                    <td>Menu</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="whiteboard">
+           <div id="wb">
+            
+           </div>
+        </div>
+    </div>
+
+    
+    <div id="footer"></div>
+</body>
+</html>

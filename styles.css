@@ -1,0 +1,242 @@
+:root {
+    --grey: rgb(225, 225, 225);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --_grey: rgb(200, 200, 200);
+    --lightgray: rgb(240, 240, 240);
+}
+
+.dark-mode {
+    --grey: rgb(20, 20, 20);
+    --white: rgb(30, 30, 30);
+    --black: rgb(255, 255, 255);
+    --_grey: rgb(50, 50, 50);
+    --lightgray: rgb(25, 25, 25);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    overflow: hidden;
+    background-color: var(--lightgray);
+}
+
+
+
+#header {
+    width: 95vw;
+    min-height: 5vh;
+    background-color: var(--grey);
+    margin:auto;
+}
+
+#main {
+    max-width: 94.2vw;
+    height: 85vh;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: -0.4vw 0vw 0vw 0vw var(--grey), 0.4vw 0vw 0vw 0vw var(--grey);
+
+}
+
+#table {
+    max-width: 95vw;
+    overflow: hidden;
+}
+    
+
+#footer {
+    width: 95vw;
+    height: 5vh;
+    background-color: var(--grey);
+    margin: auto;
+    z-index: 7;
+   
+}
+table {
+    width: 95vw;
+    margin: auto;
+    background-color: var(--grey);
+}
+tr {
+    width: 95vw;
+    background-color: var(--grey);
+    color: var(--black);
+    margin: auto;
+    offset: 0.4vw;
+}
+
+td {
+    width: 19vw;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--black);
+    font-size: 2.4vh;
+}
+
+.btn {
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--black);
+    border: none;
+    width: 7vw;
+    height: 4vh;
+    font-size: 2.4vh;
+}
+
+.btn:hover {
+    background-color: var(--_grey)
+}
+
+.menu-btn {
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--black);
+    border: none;
+    width: 7vw;
+    height: 4vh;
+    border-radius: 1.5vw;
+    font-size: 2.4vh;
+    font-weight: bold;
+
+}
+
+.menu-btn:hover {
+    background-color: var(--_grey)
+}
+
+#whiteboard {
+    position: absolute;
+    width: 94.2vw;
+    height: 85vh;
+    margin: auto;
+    background-color: var(--white);
+    overflow: scroll;
+    z-index: 9;
+    
+   
+}
+#whiteboard::-webkit-scrollbar{
+    display: none;
+  }
+
+
+.men {
+    height: 5vh
+}
+
+.menue {
+    display:none;
+    position: fixed;
+}
+
+.rectangle {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(27, 97, 210);
+    border: 0.5px solid var(--black);
+    display: inline-block;
+    position: absolute;
+}
+
+.draggable { 
+    text-align: center;
+    cursor: move;
+    z-index: 10;
+  }
+
+
+  #fffeld {
+    max-width: 19vw;
+  }
+  #fftable {
+    max-width: 19vw;
+  }
+.btn-c {
+    text-align: center;
+    border : solid 0.5px var(--black);
+    min-width: 0.7vw;
+    min-height: 0.7vh;
+    margin: 0;
+    font-size: 0px;
+}
+
+.btn-c:hover {
+    border: solid 0.5px var(--white);
+}
+
+#BLUE {
+    background-color: rgb(27, 97, 210);
+}
+
+#RED {
+    background-color: rgb(255, 0, 0);
+}
+
+#GREEN {
+    background-color: rgb(20, 107, 23);
+}
+
+#YELLOW {
+    background-color: rgb(248, 220, 12);
+}
+
+#ORANGE {
+    background-color: rgb(237, 146, 9);
+}
+
+#PURPLE {
+    background-color: rgb(80, 9, 92);
+}
+
+#BLACK {
+    background-color: rgb(0, 0, 0);
+}
+
+#WHITE {
+    background-color: rgb(255, 255, 255);
+}
+
+.invisible {
+    display: none;
+}
+
+.blue {
+    background-color: rgb(27, 97, 210);
+}
+
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+.green {
+    background-color: rgb(20, 107, 23);
+}
+
+.yellow {
+    background-color: rgb(248, 220, 12);
+}
+
+.orange {
+    background-color: rgb(237, 146, 9);
+}
+
+.purple {
+    background-color: rgb(80, 9, 92);
+}
+
+.black {
+    background-color: rgb(0, 0, 0);
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+}
+
+.r_clicked {
+    border: solid 0.5px var(--lightgray);
+
+}
+
+
