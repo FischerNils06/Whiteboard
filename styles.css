@@ -4,6 +4,7 @@
     --black: rgb(0, 0, 0);
     --_grey: rgb(200, 200, 200);
     --lightgray: rgb(240, 240, 240);
+    --tri: rgb(27, 97, 210);
 }
 
 .dark-mode {
@@ -131,14 +132,115 @@ td {
     position: fixed;
 }
 
+.text {
+    text-align: left;
+    font-size: 7px;
+    font-weight: bold;
+    color: var(--black);
+    border: 0.5px solid var(--black);
+    background-color: var(--white);
+    margin : 0;
+    height: 9px;
+    width: 16px;
+}
+
+.text-box {
+    width: 16px;
+    height: 9px;
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+}
+
 .rectangle {
     width: 10px;
     height: 10px;
-    background-color: rgb(27, 97, 210);
+    background-color: var(--tri);
     border: 0.5px solid var(--black);
     display: inline-block;
     position: absolute;
+    z-index: 10;
 }
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: var(--tri);
+    border: 0.5px solid var(--black);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+}
+
+.triangle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: transparent; 
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+
+}
+
+.triangle:before {
+    width: 0px;
+    height: 0px;
+
+    border-top: 0px solid transparent; 
+    border-right: 6px solid transparent; 
+    border-bottom: 12px solid var(--black);
+    border-left: 6px solid transparent; 
+
+    position: absolute;
+    /* content: "2"; */
+    content: "";
+    left: 0;
+}
+
+
+.triangle:after {
+    width: 0px;
+    height: 0px;
+
+    border-top: 0px solid transparent; 
+    border-right: 5px solid transparent; 
+    /*  border-bottom: 120px solid limegreen;  */
+    border-bottom: 10px solid var(--tri);
+    border-left: 5px solid transparent; 
+
+    position: absolute;
+    /* content: "3"; */
+    content: "";
+
+    left: 1px;
+    top: 1.5px;
+
+    
+}
+
+.context-menu {
+    position: absolute;
+    background-color: var(--grey);
+    border: none;
+    font-weight: bold;
+    margin-left: 11px;
+}
+
+.context-menu button {
+    background-color: var(--grey);
+    border: none;
+    font-size: 11px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0; 
+}
+
+.context-menu button:hover {
+    background-color: var(--_grey);
+}
+
 
 .draggable { 
     text-align: center;
@@ -153,6 +255,9 @@ td {
   #fftable {
     max-width: 19vw;
   }
+  #ftable {
+    max-width: 19vw;
+  }
 .btn-c {
     text-align: center;
     border : solid 0.5px var(--black);
@@ -162,9 +267,13 @@ td {
     font-size: 0px;
 }
 
+
 .btn-c:hover {
     border: solid 0.5px var(--white);
 }
+
+
+
 
 #BLUE {
     background-color: rgb(27, 97, 210);
@@ -203,40 +312,41 @@ td {
 }
 
 .blue {
-    background-color: rgb(27, 97, 210);
+    --tri: rgb(27, 97, 210);
 }
 
 .red {
-    background-color: rgb(255, 0, 0);
+    --tri: rgb(255, 0, 0);
 }
 
 .green {
-    background-color: rgb(20, 107, 23);
+    --tri: rgb(20, 107, 23);
 }
 
 .yellow {
-    background-color: rgb(248, 220, 12);
+    --tri: rgb(248, 220, 12);
 }
 
 .orange {
-    background-color: rgb(237, 146, 9);
+    --tri: rgb(237, 146, 9);
 }
 
 .purple {
-    background-color: rgb(80, 9, 92);
+    --tri: rgb(80, 9, 92);
 }
 
 .black {
-    background-color: rgb(0, 0, 0);
+    --tri: rgb(0, 0, 0);
 }
 
 .white {
-    background-color: rgb(255, 255, 255);
+    --tri: rgb(255, 255, 255);
 }
 
-.r_clicked {
+
+.r_clicked2 {
     border: solid 0.5px var(--lightgray);
-
 }
+
 
 
